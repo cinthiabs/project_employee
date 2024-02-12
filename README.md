@@ -1,2 +1,2 @@
 # project_employee
-Projeto feito com angular
+Projeto feito em angular
