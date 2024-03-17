@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Funcionario } from 'src/app/models/funcionarios';
+import { FuncionarioService } from '../../services/funcionario.service';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class CadastroComponent {
 
+  btnAcao = "Cadastrar"
+  btnTitulo = "Cadastrar Funcionario"
+  constructor(private FuncionarioService: FuncionarioService, private router: Router){
+
+  }
+  createFuncionario(funcionario: Funcionario){
+     this.FuncionarioService.CreateFuncionario(funcionario).subscribe((data) =>{
+       this.router.navigate(['/']);
+     });
+  }
 }
