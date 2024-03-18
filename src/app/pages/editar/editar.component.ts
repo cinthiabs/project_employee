@@ -10,7 +10,7 @@ import { Route, Router } from '@angular/router';
 })
 export class EditarComponent  implements OnInit{
   btnAcao : string = 'Editar';
-  btnTitulo : string = 'Editar Funcionario';
+  btnTitulo : string = 'Editar Funcionário';
   Funcionario!: Funcionario;
 
   constructor(private FuncionarioService: FuncionarioService, private route: ActivatedRoute, private router: Router){}
@@ -23,8 +23,11 @@ export class EditarComponent  implements OnInit{
 
     })
   }
+
   editarFuncionario(funcionario: Funcionario){
+    console.log('aquiiiiii')
     this.FuncionarioService.EditFuncionario(funcionario).subscribe((data)=>{
+      console.log(data)
       this.router.navigate(['/'])
     })
   }

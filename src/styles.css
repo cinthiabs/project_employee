@@ -4,6 +4,7 @@ html, body{
   height: 100vh;
   font-size: 62,5%;
   overflow: hidden;
+  background-color: black;
 }
 
 mat-card{

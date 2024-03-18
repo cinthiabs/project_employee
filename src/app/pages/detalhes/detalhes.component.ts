@@ -17,7 +17,7 @@ export class DetalhesComponent implements OnInit {
   ngOnInit(): void {
       const id = Number(this.route.snapshot.paramMap.get('id'));
 
-      this.funcionarioService.GetFuncionario(this.id).subscribe((data) =>{
+      this.funcionarioService.GetFuncionario(id).subscribe((data) =>{
         const dados = data.dados;
 
         dados.dataDeCriacao = new Date(dados.dataDeCriacao!).toLocaleDateString('pt-BR');
@@ -28,6 +28,7 @@ export class DetalhesComponent implements OnInit {
   }
   InativaFuncionario(){
     this.funcionarioService.InativaFuncionario(this.id).subscribe((data) =>{
+     console.log(data.dados)
       this.router.navigate(['/'])
     })
   }
