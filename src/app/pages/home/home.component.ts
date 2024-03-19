@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit{
 
   funcionarios: Funcionario[] = [];
   funcionariosGeral:  Funcionario[] = [];
-  colunas = ['Situacao', 'Nome', 'Sobrenome','Departamento', 'Ações','Excluir']
+  colunas = ['Situacao', 'Nome', 'Sobrenome','Departamento', 'Ações']
 
   constructor( private funciorioService: FuncionarioService ,public dialog: MatDialog){}
 
@@ -38,11 +38,11 @@ export class HomeComponent implements OnInit{
   }
   openDialog(id: number){
     this.dialog.open(ExcluirComponent, {
-      width: '450px',
-      height:'450px',
-      data: [
-        id=id
-      ]
+      width: '350px',
+      height:'350px',
+      data: {
+        id: id
+      }
     });
   }
 }

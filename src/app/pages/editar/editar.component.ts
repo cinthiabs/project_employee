@@ -17,17 +17,13 @@ export class EditarComponent  implements OnInit{
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-
     this.FuncionarioService.GetFuncionario(id).subscribe((data)=>{
       this.Funcionario = data.dados;
-
     })
   }
 
-  editarFuncionario(funcionario: Funcionario){
-    console.log('aquiiiiii')
+  editarFuncionario(funcionario : Funcionario){
     this.FuncionarioService.EditFuncionario(funcionario).subscribe((data)=>{
-      console.log(data)
       this.router.navigate(['/'])
     })
   }

@@ -26,15 +26,15 @@ export class ExcluirComponent  implements OnInit{
     this.FuncionarioService.GetFuncionario(this.inputdata.id).subscribe((data)=>{
       this.funcionario = data.dados;
     });
-
    }
 
   Excluir(){
     this.FuncionarioService.ExcluirFuncionario(this.inputdata.id).subscribe((data)=>{
-      this.ref.close();
+       this.ref.close();
       window.location.reload(); //regarregar pagina apos excluir um dado
     })
   }
+
   Cancelar(){
     this.ref.close();
   }

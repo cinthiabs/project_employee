@@ -7,5 +7,19 @@
   align-items: left;
   margin-bottom: 2rem;
 }
+mat-form-field{
+  width: 100%;
+  display: flex;
+}
 
+mat-card{
+  width: 1000px;
+  height: 100%;
+}
+.acao{
+  text-align: center;
+}
 
+.mat-mdc-button-base{
+  margin:  0px 3px 0px;
+}
