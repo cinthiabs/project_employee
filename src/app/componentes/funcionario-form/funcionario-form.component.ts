@@ -10,7 +10,7 @@ import { Funcionario } from '../../models/funcionarios';
 
 export class FuncionarioFormComponent implements OnInit {
   @Output() onSubmit = new EventEmitter<Funcionario>();
-  @Input() btnAcao! : string;
+  @Input() btnAcao! : string ;
   @Input() btnTitulo! : string;
   @Input() dadosFuncionario : Funcionario | null=null;
 

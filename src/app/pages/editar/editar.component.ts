@@ -9,8 +9,8 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./editar.component.css']
 })
 export class EditarComponent  implements OnInit{
-  btnAcao : string = 'Editar';
-  btnTitulo : string = 'Editar Funcionário';
+  btnAcao : string = 'Edit';
+  btnTitulo : string = 'Edit Employee';
   Funcionario!: Funcionario;
 
   constructor(private FuncionarioService: FuncionarioService, private route: ActivatedRoute, private router: Router){}

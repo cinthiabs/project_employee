@@ -1,62 +1,62 @@
 <mat-card>
 <div>
-  <h1>Detalhes Funcionários</h1>
+  <h1>Details Employee</h1>
 </div>
 <div *ngIf="Funcionario">
   <form action="">
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Nome:</mat-label>
+        <mat-label> First name:</mat-label>
         <input matInput type="text" value="{{Funcionario.nome}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Sobrenome:</mat-label>
+        <mat-label> Last name:</mat-label>
         <input matInput type="text"  value="{{Funcionario.sobrenome}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Departamento:</mat-label>
+        <mat-label> Department:</mat-label>
         <input matInput type="text"  value="{{Funcionario.departamento}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Turno:</mat-label>
+        <mat-label> Work shift:</mat-label>
         <input matInput type="text" value="{{Funcionario.turno}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Situação:</mat-label>
-        <input matInput type="text"  value="{{Funcionario.ativo == true ? 'Ativo': 'Inativo'}}" disabled>
+        <mat-label> Situation:</mat-label>
+        <input matInput type="text"  value="{{Funcionario.ativo == true ? 'Active': 'Inactive'}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Data de Criação:</mat-label>
+        <mat-label> Creation date:</mat-label>
         <input matInput type="text"  value="{{Funcionario.dataDeCriacao}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="input_box">
       <mat-form-field>
-        <mat-label> Data de Alteração:</mat-label>
+        <mat-label> Update date:</mat-label>
         <input matInput type="text"  value="{{Funcionario.dataDeAlteracao}}" disabled>
       </mat-form-field>
     </div>
 
     <div class="btn-box">
-      <button (click)="InativaFuncionario()" mat-raised-button color="warn">Inativar Usuário</button>
-      <button routerLink="" mat-raised-button>Voltar</button>
+      <button (click)="InativaFuncionario()" mat-raised-button color="warn">Inactivate employee</button>
+      <button routerLink="" mat-raised-button>Back to home</button>
     </div>
 
   </form>

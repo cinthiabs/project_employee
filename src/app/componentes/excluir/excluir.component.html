@@ -1,15 +1,15 @@
 <mat-card>
 <div *ngIf="funcionario">
-  <h1 style="text-align: center;" >Deseja confirmar a exclusão?</h1>
+  <h1 style="text-align: center;" >Do you want to confirm the deletion?</h1>
   <div>
-    <h2>Funcionario:</h2>
+    <h2>Employee:</h2>
     <p>{{funcionario.nome}} {{funcionario.sobrenome}}</p>
-    <h2>Departamento:</h2>
+    <h2>Department:</h2>
     <p>{{funcionario.departamento}}</p>
   </div>
   <div>
-    <button mat-raised-button color="warn" (click)="Excluir()">Cofirmar Exclusão</button>
-    <button mat-raised-button (click)="Cancelar()">Voltar</button>
+    <button mat-raised-button color="warn" (click)="Excluir()">Confirm</button>
+    <button mat-raised-button (click)="Cancelar()">Back to home</button>
   </div>
 </div>
 </mat-card>

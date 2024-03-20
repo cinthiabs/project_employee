@@ -6,45 +6,45 @@
 
   <div class="input_box">
     <mat-form-field>
-      <mat-label for="">Nome:</mat-label>
-      <input matInput type="text" formControlName="nome" placeholder=" Insira o nome" required>
+      <mat-label for="">First name:</mat-label>
+      <input matInput type="text" formControlName="nome" placeholder="Fisrt name" required>
     </mat-form-field>
  </div>
 
  <div class="input_box">
   <mat-form-field>
-    <mat-label for="">Sobrenome:</mat-label>
-    <input matInput type="text" formControlName="sobrenome" placeholder=" Insira o sobrenome" required>
+    <mat-label for="">Last name:</mat-label>
+    <input matInput type="text" formControlName="sobrenome" placeholder="Last name" required>
   </mat-form-field>
 </div>
 
 <div class="input_box">
  <mat-form-field>
-  <mat-label for="">Departamento:</mat-label>
+  <mat-label for="">Department:</mat-label>
   <mat-select  id="departamento" formControlName="departamento" required>
-    <mat-option value="RH">RH</mat-option>
-    <mat-option value="Financeiro">Financeiro</mat-option>
-    <mat-option value="Compras">Compras</mat-option>
-    <mat-option value="Atendimento">Atendimento</mat-option>
-    <mat-option value="Zeladoria">Zeladoria</mat-option>
+    <mat-option value="HR">HR</mat-option>
+    <mat-option value="Financial">Financial</mat-option>
+    <mat-option value="Technology">Technology</mat-option>
+    <mat-option value="Service">Service</mat-option>
+    <mat-option value="Administration">Administration</mat-option>
   </mat-select>
 </mat-form-field>
 </div>
 
 <div class="input_box">
   <mat-form-field>
-  <mat-label for="">Turno:</mat-label>
+  <mat-label for="">Work shift:</mat-label>
   <mat-select  id="turno" formControlName="turno" required>
-    <mat-option value="Manhã">Manhã</mat-option>
-    <mat-option value="Tarde">Tarde</mat-option>
-    <mat-option value="Noite">Noite</mat-option>
+    <mat-option value="Morning">Morning</mat-option>
+    <mat-option value="Afternoon">Afternoon</mat-option>
+    <mat-option value="Evening">Evening</mat-option>
   </mat-select>
 </mat-form-field>
 </div>
 
 <div class="bt-box">
   <button mat-raised-button color="accent" type="submit"[disabled]="!funcionarioForm.valid">{{btnAcao}}</button>
-  <button mat-raised-button routerLink="">Voltar</button>
+  <button mat-raised-button routerLink="">Back to home</button>
 </div>
 
 </form>

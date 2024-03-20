@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit{
 
   funcionarios: Funcionario[] = [];
   funcionariosGeral:  Funcionario[] = [];
-  colunas = ['Situacao', 'Nome', 'Sobrenome','Departamento', 'Ações']
+  colun = ['Situation', 'Fisrt name', 'Last name','Department', 'Work shift','Actions']
 
   constructor( private funciorioService: FuncionarioService ,public dialog: MatDialog){}
 
