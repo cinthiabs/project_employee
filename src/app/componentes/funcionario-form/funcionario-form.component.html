@@ -4,21 +4,21 @@
 <form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDit="ngForm">
 <input type="hidden" formControlName="id">
 
-  <div class="input_box">
+  <div id="firstname" class="input_box">
     <mat-form-field>
       <mat-label for="">First name:</mat-label>
       <input matInput type="text" formControlName="nome" placeholder="Fisrt name" required>
     </mat-form-field>
  </div>
 
- <div class="input_box">
+ <div id="lastname" class="input_box">
   <mat-form-field>
     <mat-label for="">Last name:</mat-label>
     <input matInput type="text" formControlName="sobrenome" placeholder="Last name" required>
   </mat-form-field>
 </div>
 
-<div class="input_box">
+<div id="department" class="input_box">
  <mat-form-field>
   <mat-label for="">Department:</mat-label>
   <mat-select  id="departamento" formControlName="departamento" required>
@@ -31,7 +31,7 @@
 </mat-form-field>
 </div>
 
-<div class="input_box">
+<div id="workshift" class="input_box">
   <mat-form-field>
   <mat-label for="">Work shift:</mat-label>
   <mat-select  id="turno" formControlName="turno" required>

@@ -5,49 +5,49 @@
 <div *ngIf="Funcionario">
   <form action="">
 
-    <div class="input_box">
+    <div id="firstname" class="input_box">
       <mat-form-field>
         <mat-label> First name:</mat-label>
         <input matInput type="text" value="{{Funcionario.nome}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div id="lastname" class="input_box">
       <mat-form-field>
         <mat-label> Last name:</mat-label>
         <input matInput type="text"  value="{{Funcionario.sobrenome}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div id="department" class="input_box">
       <mat-form-field>
         <mat-label> Department:</mat-label>
         <input matInput type="text"  value="{{Funcionario.departamento}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div id="workshift" class="input_box">
       <mat-form-field>
         <mat-label> Work shift:</mat-label>
         <input matInput type="text" value="{{Funcionario.turno}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div id="situation" class="input_box">
       <mat-form-field>
         <mat-label> Situation:</mat-label>
         <input matInput type="text"  value="{{Funcionario.ativo == true ? 'Active': 'Inactive'}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div id="createdate" class="input_box">
       <mat-form-field>
         <mat-label> Creation date:</mat-label>
         <input matInput type="text"  value="{{Funcionario.dataDeCriacao}}" disabled>
       </mat-form-field>
     </div>
 
-    <div class="input_box">
+    <div  id="updatedate"  class="input_box">
       <mat-form-field>
         <mat-label> Update date:</mat-label>
         <input matInput type="text"  value="{{Funcionario.dataDeAlteracao}}" disabled>
