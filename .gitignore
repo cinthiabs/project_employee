@@ -44,4 +44,4 @@ Thumbs.db
 #cypress
 cypress/downloads/
 cypress/screenshots/
-cypress/videos/
+cypress/videos

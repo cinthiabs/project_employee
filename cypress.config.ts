@@ -4,10 +4,12 @@ export default defineConfig({
   port:4021,
   e2e: {
     baseUrl: 'http://localhost:4200',
-    video:true,
 
+    viewportHeight:680,
+    viewportWidth:1200
   },
-
+  video:true,
+  videosFolder: 'cypress/videos',
   component: {
     devServer: {
       framework: 'angular',

@@ -3,13 +3,13 @@
   <h1 style="text-align: center;" >Do you want to confirm the deletion?</h1>
   <div>
     <h2>Employee:</h2>
-    <p>{{funcionario.nome}} {{funcionario.sobrenome}}</p>
+    <p id="employeename">{{funcionario.nome}} {{funcionario.sobrenome}}</p>
     <h2>Department:</h2>
-    <p>{{funcionario.departamento}}</p>
+    <p id="employeedepart">{{funcionario.departamento}}</p>
   </div>
   <div>
-    <button mat-raised-button color="warn" (click)="Excluir()">Confirm</button>
-    <button mat-raised-button (click)="Cancelar()">Back to home</button>
+    <button id="delete" mat-raised-button color="warn" (click)="Excluir()">Confirm</button>
+    <button id="back" mat-raised-button (click)="Cancelar()">Back to home</button>
   </div>
 </div>
 </mat-card>

@@ -41,3 +41,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+ Cypress.Commands.add("ValidateDataInTheGrid", (record) => {
+   cy.get('table').contains(record).closest('tr').find('#actions > .mat-primary')
+})
+
+Cypress.Commands.add("ValidateDataNotInTheGrid", (record) => {
+  cy.get('table').should('not.contain',record)
+})
+
